@@ -10,4 +10,5 @@ Implementation of ResNet on cifar-10 dataset
 
 ---
 # How to run
+create a folder name 'output', then run the following command in terminal
 `python resnet_image_classification.py -m output/resnet.hdf5 --output output`
