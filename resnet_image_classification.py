@@ -92,7 +92,7 @@ print("[INFO] training network...")
 model.fit_generator(
 aug.flow(trainX, trainY, batch_size=16),
 validation_data=(testX, testY),
-steps_per_epoch=len(trainX) // 64, epochs=10,
+steps_per_epoch=len(trainX) // 16, epochs=10,
 callbacks=callbacks, verbose=1)
 
 # save the network to disk
